@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("Background.png");
+}
+
+.nav {
+    background-color: #1A0B2E;
+}
+
+.nav h1 {
+    color: white;
+}
+
+.card1 {
+    box-shadow: 10px 10px 15px rgba(59, 58, 58, 0.4), -10px -10px 15px rgba(241, 239, 239, 0.05);
+    width: fit-content;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards .card {
+    text-align: justify;
+    box-shadow: 5px 5px 15px rgba(65, 64, 64, 0.9), -5px -5px 15px rgba(255, 255, 255, 0.05);
+    flex: 1 1 calc(25% - 20px); 
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+}
+
+.card img {
+    height: 160px; 
+}
+
+.name {
+    font-size: 60px;
+}
+
+input[placeholder="Name"],
+input[placeholder="Email"],
+input[placeholder="Mobile No"],
+input[placeholder="Subject"] {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 35px;
+    height: 45px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+}
+
+textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: rgb(244, 188, 4);
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.cards div {
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .cards .card {
+        flex: 1 1 calc(50% - 20px); 
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards .card {
+        flex: 1 1 100%; 
+        justify-content: center;
+    }
+}
